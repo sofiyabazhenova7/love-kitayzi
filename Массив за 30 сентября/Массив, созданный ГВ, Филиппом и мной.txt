@@ -1,0 +1,29 @@
+a = []
+def appending(a):
+   
+        s = input('Слово или число ')
+        if s == 'число': 
+           s = int(input('Введите число '))
+           
+        else: 
+            s = input('Введите слово ')
+        a.append(s)
+        print(a)
+        
+def search(a):
+    for i in range(len(a)):
+        if isinstance(a[i], int):
+            a[i] = a[i] + 1
+        else: 
+            print('Да не прибавишь ты, это же слово! 0_0')
+    print(a)
+    
+while True:
+   print('1. Добавить число или слово в массив \n 2. Найти все числа и жмыхнуть их \n 3. Вывести текущий массив')
+   l = input('Выберете действие: ')
+   if l == str(1):
+      appending(a)
+   elif l == str(2): 
+       search(a)
+   elif l == str(3):
+       print(a)
