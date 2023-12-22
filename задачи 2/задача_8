@@ -1,0 +1,4 @@
+mes = "Переворачиватель"
+mes = mes.swapcase()
+mes = ''.join(reversed(mes))
+print(mes)
