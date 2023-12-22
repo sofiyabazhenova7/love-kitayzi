@@ -1,0 +1,11 @@
+a='aaaaeeeeedfgdgfgcrctr aefgfcgagfg ccefcg'
+a=list(a)
+z=[]
+for i in range(len(a)):
+    if a[i]=='a':
+        z.append('4')
+    elif a[i]=='e':
+        z.append('3')
+    else:
+        z.append(a[i])
+print(''.join(z)) #join - возвращает строку, объединяя все элементы итерации, разделенные разделителем строк.
