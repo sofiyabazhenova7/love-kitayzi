@@ -1,0 +1,8 @@
+a='abcdbcbcbhcgghcsguycdjhfkjsvb'
+b=[]
+def miu(a):
+    for i in range(len(a)):
+        k=ord(a[i])-96 #Принимает символ и возвращает целое число - номер из таблицы символов Unicode,
+        b.append(k)
+    print(b)
+miu(a)
