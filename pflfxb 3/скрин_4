@@ -1,0 +1,15 @@
+x='bdhbs111bhb2hb32g738878hufgyvbf9'
+def f(x):
+    x=list(x)
+    for i in range(len(x)-1):
+        if x[i]=='0':
+            x.pop(i) #Удаление элемента
+    m=[]
+    for i in range(len(x)):
+        if x[i].isalpha()==True:
+            m.append('+')
+        else:
+            m.append(x[i])
+    ms=''.join(m)
+    print(eval(ms)) #Выполняет записанное математическое выражение
+f(x)
