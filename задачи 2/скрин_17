@@ -1,0 +1,10 @@
+import math
+xa=5
+xb=8
+ya=2
+yb=6
+def Vika(xa,xb,ya,yb):
+    n=math.sqrt(((xb-xa)**2)+((yb-ya)**2))
+    n=round(n,0)
+    print(n)
+Vika(xa,xb,ya,yb)
