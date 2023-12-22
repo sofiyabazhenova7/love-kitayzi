@@ -1,0 +1,11 @@
+a=int(input())
+k=str(a)
+f=str(input('')) #минуты
+b=input('') #время am или pm
+print(k+b)
+if b=='am':
+    print('24-часовой формат - '+k+'.'+f)
+else:
+    g=a+12
+    y=str(g)
+    print('24-часовой формат - '+y+'.'+f)
