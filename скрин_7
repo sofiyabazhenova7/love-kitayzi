@@ -1,0 +1,39 @@
+a = 'GhGhzzzz z+++///'
+b = 0
+def c(a, b):
+    for i in range (len(a)):
+        if a[i].isupper:
+            b = b+1   
+            print(b)
+c(a, b)
+
+a = 'HGGGGGF_Gdfdvv//....+'
+def c(a):
+    b = 0
+    l = '/'
+    m = '+'
+    n ='.'
+    s = '_'
+    for i in range(1):
+        if a[0].istitle(): #если каждое слово начинается с заглавной буквы и в ней есть хотя бы один символ в верхнем регистре
+            b = b+1 
+        else:
+            b = b
+    if l in a:
+        b = b+1
+    else:
+        b = b
+    if m in a:
+        b = b+1
+    else:
+        b = b
+    if n in a:
+        b = b+1
+    else:
+        b = b
+    if s in a:
+        b = b+1
+    else:
+        b = b
+        print(b)
+c(a)
