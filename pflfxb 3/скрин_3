@@ -1,0 +1,7 @@
+f=[2,3,6,8]
+def l(f):
+    if sum(f)>21:
+        return(True)
+    if sum(f)<=21:
+        return(False)
+print(l(f)) 
