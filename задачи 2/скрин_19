@@ -1,0 +1,8 @@
+a=[12,15,7,35,0,594]
+b=[]
+c=0
+for i in range (len(a)):
+    p=a[i]
+    c=c+p
+    b.append(c)
+print(b)
