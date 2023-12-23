@@ -1,13 +1,4 @@
-a = 'GhGhzzzz z+++///'
-b = 0
-def c(a, b):
-    for i in range (len(a)):
-        if a[i].isupper:
-            b = b+1   
-            print(b)
-c(a, b)
-
-a = 'HGGGGGF_Gdfdvv//....+'
+a = 'FDHDFHDFHTfrete_///2324.....'
 def c(a):
     b = 0
     l = '/'
@@ -19,21 +10,25 @@ def c(a):
             b = b+1 
         else:
             b = b
-    if l in a:
-        b = b+1
-    else:
-        b = b
-    if m in a:
-        b = b+1
-    else:
-        b = b
-    if n in a:
-        b = b+1
-    else:
-        b = b
-    if s in a:
-        b = b+1
-    else:
-        b = b
+            
+        if l in a:
+            b = b+1
+        else:
+            b = b
+            
+        if m in a:
+            b = b+1
+        else:
+            b = b
+            
+        if n in a:
+            b = b+1
+        else:
+            b = b
+            
+        if s in a:
+            b = b+1
+        else:
+            b = b
         print(b)
 c(a)
