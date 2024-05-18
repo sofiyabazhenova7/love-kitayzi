@@ -1,0 +1,9 @@
+s = "Ш,\а\,:.\л,\.::::::а.....ш"
+s1 = "".join(c for c in s if c.isalnum())
+w=s1.lower()#переводит всё в нижний регистр
+print(w,w[::-1])
+d=w[::-1]
+if w == d:
+    print(True)
+else:
+    print(False) 
