@@ -1,0 +1,14 @@
+a = [3, 987]
+b = []
+k = a[0]
+while k!= a[1]:
+    h = False
+    for i in range (2, k//2):
+        if k%i == 0 and k!=i:
+            h = True
+            break
+    if h == False:
+        b.append(k)
+    k+=1
+s=sum(b)
+print(s)
