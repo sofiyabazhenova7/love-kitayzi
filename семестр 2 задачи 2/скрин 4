@@ -1,1 +1,18 @@
+class Nikola:
+    def __init__(self, n, a):
+        self.n= n
+        self.a = a
+        
+    def show(self):
+        if self.n != 'Николай':
+            print('Я не ' + self.n + ', а Николай' + ". Мне " + self.a)
+        else:
+            print ('Я '+ self.n + ". Мне " + self.a)
+            
+name1 = Nikola("Маша",'64')
+name2 = Nikola("Николай", "11")
+name3 = Nikola("Кринж","22")
+name1.show()
+name2.show()
+name3.show()
 
