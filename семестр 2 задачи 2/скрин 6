@@ -1,0 +1,33 @@
+class bt:
+    def __init__(self,s,m):
+        self.m=m
+        self.s=s
+
+    def app_som(self):
+        a=input("введите название самолета, который хотите добавить")
+        self.s.append(a)
+        print(self.s)
+
+    def rem_som(self):
+        v=input('ввиде название самолета, который хотите удалить')
+        self.s.remove(v)
+        print(self.s)
+
+    def app_mor(self):
+        a=input("введите название моршрута, который хотите добавить")
+        self.m.append(a)
+        print(self.m)
+
+    def rem_mor(self):
+        v=input('ввиде название маршрута, который хотите удалить')
+        self.m.remove(v)
+        print(self.m)
+
+    def poisk_po_gorodu(self):
+        n=input('введите название маршрута, который хотите найти')
+        print('все маршруты содержащие город ')
+
+        
+        
+b=bt(['1','2','3','4','5'],[['[a]','[v]'],['g'],['u']])
+b.poisk_po_gorodu()
