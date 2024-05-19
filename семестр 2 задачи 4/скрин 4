@@ -1,0 +1,18 @@
+m = [ 0,3 ,3 ,3 ,2 ,5, 7, 1, 2, 2]
+cnd = 0
+cnd1 =0
+l=0
+ans=[]
+for i in range(len(m)-1):
+  if m[i] < m [i+1] and l == 0:
+    cnd = m[i+1]
+    ans.append(cnd1)
+    cnd1=0
+    l+=0
+  elif cnd < m [i+1] and l != 0:
+    cnd = m[i+1]
+    ans.append(cnd1)
+    cnd1= 0
+  else:
+    cnd1+=1
+print(max(ans))
