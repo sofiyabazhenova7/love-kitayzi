@@ -1,0 +1,19 @@
+class student:
+    def __init__(self,name,age,les,a,k,l):
+        self.name=name
+        self.age=age
+        self.les=les
+        self.a=a
+        self.k=k
+        self.l=l
+    def ad(self):  
+        self.los.append(self.a)
+        print(self.les)
+    def rf(self):
+        self.los.remove(self.k)
+        print(self.les)
+    def sb(self):
+        print(sum(self.l)/len(self.l))
+
+b=student('мяу',17,['rus','mat','angl','liter'],'trud','mat',[2,4,5,3,3])#name,age,les,a,k,l
+b.sb()
