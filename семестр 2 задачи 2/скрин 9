@@ -1,1 +1,27 @@
-
+class Produkt:
+    def __init__(self, n, zena, N):
+        self.n = n
+        self.zena = zena
+        self.N = N        
+    def plus(self):
+        print('Товара "',self.n,'" -', self.N)
+        a=int(input('введите на сколько хотите увеличить товар:  '))
+        b=self.N + a
+        print('на складе теперь ',b," товар(а)")
+    def ybrat(self):
+        print('Товара "',self.n,'" -', self.N)
+        a=int(input('введите на сколько хотите сократить товар:  '))
+        b=self.N - a
+        if a>self.N:
+            print('на складе недостаточно товара для урезания')
+        else:
+            print('на складе теперь ',b," товар(а)")
+    def cost(self):
+        print('Товара "',self.n,'" -', self.N)
+        g=self.N*self.zena
+        print('общая стоимость товара: ',g)
+p1 = Produkt("ХАГИ-ВАГИ",2345667442,44345)
+p2 = Produkt("маракУйяя", 1,4)
+p3 = Produkt("малинки-малинки",77777,40)
+p1.ybrat()
+p3.cost()
