@@ -1,0 +1,10 @@
+class Book:
+    def __init__(self, n, o):
+        self.o = o  
+        self.n = n
+        
+book1 = Book("Вино из одуванчиков", "Брэдбери")
+book2 = Book("Попрыгунья", "Чехов")
+
+print(book1.n +" - "+ book1.o)
+print(book2.n +" - "+ book2.o)
