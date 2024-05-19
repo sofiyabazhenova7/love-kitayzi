@@ -1,0 +1,22 @@
+import math
+import random 
+a='безысходность'
+cnd = 0
+a1=a
+v=[]
+ans=[]
+while True:
+    for i in range (len(a)):
+        y=random.choice(a)
+        v.append(y)
+        a=list(a)
+        a.remove(y)
+        a="".join(a)
+    cnd+=1
+    a=a1
+    if  "".join(v) not in ans:
+        ans.append("".join(v))
+    v=[]
+    if len(ans) == math.factorial(len(a)) :
+        break
+print(ans)
