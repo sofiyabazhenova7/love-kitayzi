@@ -1,1 +1,21 @@
+class l:
+    def __init__(self,m):
+        self.m=m
 
+    def app(self):
+        a=input("Добавьте книгу")
+        self.m.append(a)
+        print(self.m)
+
+    def rem(self):
+        v=input('Удалите книгу')
+        self.m.remove(v)
+        print(self.m)
+
+    def poisk(self) :
+        n=input('Что хотите почитать? ')
+        for i in self.m :
+            if i == n:
+                print('индекс книги',i)
+b=l(['1','2','3'])
+b.app()
