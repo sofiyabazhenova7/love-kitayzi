@@ -1,1 +1,11 @@
-
+class soda:
+    def __init__(self,mmm):
+        self.mmm=mmm
+    def s_m_d(self):
+        if self.mmm != '':
+            print('газировка','и',self.mmm)
+        else:
+            print('банально, ууу')
+a=input()
+b=soda(a)
+b.s_m_d()
